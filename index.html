@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ColourScope AI</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>ColourScope AI</h1>
+  </header>
+
+  <main>
+    <div id="intro-screen">
+    <p>Identify numbers in the plates to analyze your color vision.</p>
+    <button id="start-button">Start Test</button>
+    </div>
+
+    <div id="test-section" style="display: none;">
+      <img id="test-image" src="plates/plate1.png" alt="Ishihara Plate"/>
+      <br></br>
+      <input type="text" id="user-input" placeholder="Enter the number you see"/>
+      <button id="next-button">Next</button>
+    </div>
+
+    <div id="result-section" style="display: none;">
+      <h2>Your Results</h2>
+      <p id="result-text"></p>
+      <button id="download-pdf">Download PDF</button>
+    </div>
+
+    <div id="info-page" style="display: none;">
+      <h2>Understanding Your Vision</h2>
+      <p id="info-text"></p>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
